@@ -1,6 +1,6 @@
 # Challenge-Wk2
 
-## Portfolio
+## My Portfolio
 
 ### Description
 Having a portfolio deployed with active web applications is a good practice for every web developer. My tasks at the end of week two is to set up my very own portfolio, with an attractive layout and array of apps. I am expected to apply the core skills acquired over the period such as flexbox, media queries, and CSS variables. Once again ‘HTML Semantic Elements’ and Agile Project Management’ are key principles that must be factored into this project. Once again anther daunting task, matched with an equal resolve to do justice to it.
