@@ -1,0 +1,177 @@
+:root {
+  --theme: #8ee1ff;
+  --text: #282838;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: #3b5369;
+  color: var(--text);
+}
+
+#title {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin-left: 0;
+  background-color: var(--theme);
+
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--theme);
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 30px;
+  border-bottom: 2px solid var(--theme);
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+ul {
+  list-style: none;
+}
+
+.hero-banner {
+  display: flex;
+  height: 150px;
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-text {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 80px;
+  margin-bottom: 30px;
+  background-color: var(--theme);
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  text-align: right;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+p {
+  margin: 0px;
+}
+
+#PageWrap {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 700px;
+  height: 90vh;
+  grid-template-rows: 25% 60% 15%;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "PageA PageA"
+    "PageW PageW"
+    "PageC PageC"
+    ;
+}
+
+#PageA {
+  grid-area: PageA;
+  background-color: #8ee1ff;
+  margin: 10px 0px 15px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "about TextA"
+    ;
+}
+
+#PageW {
+  grid-area: PageW;
+  background-color: bisque;
+  margin: 10px 0px 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-areas:
+    "work PageW PageW"
+    "work PageW PageW"
+    "work PageW PageW"
+    "work PageW PageW"
+    "work PageW PageW"
+    ;
+}
+
+#PageC {
+  grid-area: PageC;
+  background-color: chartreuse;
+  margin: 10px 0px 15px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "contact PageC"
+    ;
+}
+
+#about {
+  grid-area: about;
+  border-right: 3px solid var(--text);
+  padding-right: 10px;
+}
+
+#work {
+  grid-area: work;
+  border-right: 3px solid var(--text);
+  padding-right: 10px;
+}
+
+#contact {
+  grid-area: contact;
+  border-right: 3px solid var(--text);
+  padding-right: 10px;
+}
