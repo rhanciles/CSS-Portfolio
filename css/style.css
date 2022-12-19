@@ -27,6 +27,12 @@ header {
 
 }
 
+#social img {
+  height: 50px;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
 #menu {
   display: flex;
   flex-direction: row;
@@ -62,8 +68,9 @@ ul {
   margin-bottom: 10px;
   flex-direction: row-reverse;
   align-items: flex-end;
-  background-image: url(../images/02-hero-bg.jpg);
+  background-image: url(../images/177606.jpg);
   background-size: cover;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -124,7 +131,7 @@ p {
 
 #PageA {
   grid-area: PageA;
-  background-color: #8ee1ff;
+  /* background-color: #8ee1ff; */
   margin: 10px 0px 15px;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -147,7 +154,7 @@ p {
 
 #PageW {
   grid-area: PageW;
-  background-color: bisque;
+  /* background-color: bisque; */
   margin: 10px 0px 15px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -163,15 +170,17 @@ p {
 
 #Page0W {
   grid-area: Page0W;
-  background-image: url(../images/02-portfolio-4.jpg);
-  background-size: auto;
+  display: grid;
+  background-image: url(../images/Portfolio-102.jpg);
+  background-size: cover;
   border: 4px solid var(--theme);
   margin: 5px;
 }
 
 #Page1W {
   grid-area: Page1W;
-  background-image: url(../images/02-portfolio-1.jpg);
+  display: grid;
+  background-image: url(../images/Portfolio-01.jpg);
   background-size: cover;
   border: 4px solid var(--theme);
   margin: 5px;
@@ -179,7 +188,8 @@ p {
 
 #Page2W {
   grid-area: Page2W;
-  background-image: url(../images/02-portfolio-2.jpg);
+  display: grid;
+  background-image: url(../images/Portfolio-03.jpg);
   background-size: cover;
   border: 4px solid var(--theme);
   margin: 5px;
@@ -187,7 +197,8 @@ p {
 
 #Page3W {
   grid-area: Page3W;
-  background-image: url(../images/02-portfolio-3.jpg);
+  display: grid;
+  background-image: url(../images/Portfolio-02.jpg);
   background-size: cover;
   border: 4px solid var(--theme);
   margin: 5px;
@@ -195,22 +206,69 @@ p {
 
 #Page4W {
   grid-area: Page4W;
-  background-image: url(../images/02-run-buddy.jpg);
+  display: grid;
+  background-image: url(../images/Portfolio-04.jpg);
   background-size: cover;
   border: 4px solid var(--theme);
   margin: 5px;
 }
 
+.PageTA {
+  display: grid; 
+  color: var(--text);
+  font-size: 19px;
+  text-align: center;
+  line-height: 0.3;
+  padding: 10px;
+  width: 140px;
+  height: 50px;
+  margin-top: 230px;
+  background-color: var(--theme);
+}
+
+.PageTB {
+  display: grid; 
+  color: var(--text);
+  font-size: 19px;
+  text-align: center;
+  line-height: 0.3;
+  padding: 10px;
+  width: 140px;
+  height: 50px;
+  margin-top: 25px;
+  background-color: var(--theme);
+}
+
+
 #PageC {
   grid-area: PageC;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   margin: 10px 0px 15px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 20% 80%;
   grid-template-areas:
-    "contact PageC"
+    "contact Page1C"
     ;
+}
+
+#Page1C {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+div li a {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid var(--text);
+}
+
+div li a:hover {
+  color: var(--theme);
+  border-bottom: 2px solid var(--theme);
 }
 
 #about {
