@@ -21,7 +21,7 @@ header {
 #title {
   display: flex;
   justify-content: space-around;
-  width: 20%;
+  width: 25%;
   margin-left: 0;
   background-color: var(--theme);
 
@@ -29,19 +29,23 @@ header {
 
 #social img {
   height: 30px;
-  padding: 0px 5px;
+  padding: 0px 2%;
   cursor: pointer;
 }
 
 #social {
-  margin-left: 50px;
-  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  /* padding-left: 10%; */
+  padding-top: 0.5%;
+  width: 30%;
 }
 
 #menu {
   display: flex;
   flex-direction: row;
-  width: 30%;
+  justify-content: flex-start;
+  width: 35%;
 }
 
 nav ul {
@@ -54,7 +58,7 @@ nav a {
   color: var(--theme);
   font-weight: bold;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 10%;
   border-bottom: 2px solid var(--theme);
 }
 /* Added hover effect to the menu */
@@ -65,7 +69,7 @@ nav a:hover {
 
 ul {
   list-style: none;
-  padding-inline-start: 5px;
+  padding-inline-start: 2%;
 }
 
 .hero-banner {
@@ -107,7 +111,7 @@ h6 {
 
 h2 {
   text-align: right;
-  font-size: 30px;
+  font-size: 150%;
   line-height: 1.2;
   color: var(--text);
 }
@@ -138,22 +142,22 @@ p {
 #about {
   grid-area: about;
   border-right: 3px solid var(--text);
-  padding-right: 10px;
-  margin-right: 30px;
+  padding-right: 5%;
+  margin-right: 15%;
 }
 
 #work {
   grid-area: work;
   border-right: 3px solid var(--text);
-  padding-right: 10px;
-  margin-right: 30px;
+  padding-right: 5%;
+  margin-right: 15%;
 }
 
 #contact {
   grid-area: contact;
   border-right: 3px solid var(--text);
-  padding-right: 10px;
-  margin-right: 30px;
+  padding-right: 5%;
+  margin-right: 15%;
 }
 
 #PageA {
@@ -239,7 +243,7 @@ p {
   border: 4px solid var(--theme);
   margin: 5px;
 }
-/* Positioning the text tabs on the left side of the boxes using flex/grid didn't work. Adhearing to this design also means the box-model doesn't quite work for responsiveness either*/
+/* Positioning the text tabs on the left side of the boxes using flex/grid didn't work. Adhering to this design also means the box-model doesn't quite work for responsiveness either */
 .PageTA { 
   position: relative;
   color: var(--text);
@@ -306,3 +310,94 @@ div
   color: var(--text);
   text-decoration: none;
 }
+
+/* Responsive code */
+
+@media only screen and (max-width: 600px){
+  header { 
+    background-color: #3c2e4b;
+    flex-direction: column;
+  }
+  :root {
+    --theme: #8ee1ff;
+    --text: #382831;
+  }
+  #title {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+    color: var(--theme);
+    background-color: inherit;
+  }
+  #social {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    margin: 0;
+  }
+
+  #menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 0;
+  }
+
+  nav a {
+  margin: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #about h2, #contact h2 {
+    text-align: left;
+    writing-mode: vertical-rl;
+    margin: 10% 20% 0;
+    line-height: 1.0;
+  }
+
+  #work h2 {
+    text-align: left;
+    writing-mode: vertical-rl;
+    margin: 10% 60% 0;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  #PageW {
+    grid-template-rows: 32% 17% 17% 17% 17%;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+      "work Page0W"
+      "work Page1W"
+      "work Page2W"
+      "work Page3W"
+      "work Page4W"
+      ;
+  }
+
+  .PageTA, .PageTB {
+    line-height: 0.1;
+    padding: 5px;
+    height: 35px;
+    width: 90px;
+    margin: 0;
+  }
+
+  #Page1C {
+    flex-wrap: wrap;
+  }
+
+}
+
