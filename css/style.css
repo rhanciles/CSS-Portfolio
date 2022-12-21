@@ -243,7 +243,6 @@ p {
   border: 4px solid var(--theme);
   margin: 5px;
 }
-<<<<<<< HEAD
 /* Positioning the text tabs on the left side of the boxes using flex/grid didn't work. Adhering to this design also means the box-model doesn't quite work for responsiveness either */
 .PageTA { 
   position: relative;
@@ -402,5 +401,3 @@ div
 
 }
 
-=======
->>>>>>> d65c12ea000a9d429a3b162de588da2bdfd412dc
